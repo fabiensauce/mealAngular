@@ -1,0 +1,88 @@
+First Name: <input type="text" ng-model="firstName"><br>
+			Last Name: <input type="text" ng-model="lastName"><br>
+
+
+		
+		
+		<!--
+			<input type="checkbox" ng-model="activeColor">active color
+			<a href="#/home" class="btn btn-primary" ng-class="{myActive: activeColor}" >Page d'accueil</a>
+			</br>
+		-->
+			<!--<a href="#/home" class="btn btn-primary" ng-class="{myActive : $route.current.activetab == 'home'}" ng-click="homeClass='btn-primary'">Page d'accueil</a>-->
+			
+			
+            <a href="#/home" class="btn btn-primary" ng-click="toogle()" >Page d'accueil</a>
+            <a href="#/contact" ng-class="btn-success" class="btn btn-warning" ng-click="toogle()" >Page de contact</a>
+            <a href="#/planning" class="btn btn-success" ng-click="toogle()" >Planning</a>
+            <a href="#/listOfAliment" class="btn btn-success" ng-click="toogle()" >List of Aliments</a>
+            <a href="#/starter" class="btn btn-success" ng-click="toogle()" >Starter</a>
+            <a href="#/course" class="btn btn-success" ng-click="toogle()" >Course</a>
+            <a href="#/dessert" class="btn btn-success" ng-click="toogle()" >Dessert</a>
+            <!--<a href="#/breakfast" ng-class="{btn-warning: warning, btn-success: success}" >Breakfast</a>
+			-->
+			</br>
+			</br>
+			</br>
+			<div  >
+			First Name: <input type="text" ng-model="firstName"><br>
+			Last Name: <input type="text" ng-model="lastName"><br>
+			<br>
+			Full Name: {{firstName + " " + lastName}}
+		</div>
+		
+		
+		
+			<input type="checkbox" ng-model="warning"> warning
+			<input type="checkbox" ng-model="success"> success
+			
+			<input id="setbtn" type="button" value="set" ng-click="myVar='my-class'">
+			<input id="clearbtn" type="button" value="clear" ng-click="myVar=''">
+			<input id="assholebtn" type="button" value="asshole3" ng-click="myVar='my-ass'">
+			<input id="assholebtn2" type="button" ng-value="buenosAire" ng-click="testAlert(buenosAire)">
+			<p><input type="text" ng-model="buenosAire"></p>
+			<br>
+			
+			<div class="base-toi" > hello </div>
+			<span class="base-class" ng-class="myVar">Sample Text</span>
+			
+			
+				<div ng-controller="myCtrl">
+		First Name: <input type="text" ng-model="firstName"><br>
+		Last Name: <input type="text" ng-model="lastName"><br>
+		<br>
+		Full Name: {{firstName + " " + lastName}}
+		</div>
+		
+		
+		
+		
+		
+		******************************** script **************************
+		
+		appMeal.controller('navMeal', ['$scope', function($scope) {
+	$scope.firstName = "John";
+    $scope.lastName = "Doe";
+	
+    /*$scope.showContactButton = true;
+    $scope.showHomeButton = false;
+	$scope.toogle = function(){
+		$scope.showContactButton = !$scope.showContactButton;
+		$scope.showHomeButton = !$scope.showHomeButton;
+	}
+	*/
+	$scope.buenosAire = "alalalalalala";
+	$scope.asshole = function() {
+		alert("text");
+		$scope.ngval = "bOOM";
+		$scope.myVar = "my-ass";
+    };
+
+}]);
+
+/*
+appMealControllers.controller('myCtrl', function($scope) {
+			$scope.firstName = "John";
+			$scope.lastName = "Doe";
+		});
+*/
