@@ -55,9 +55,9 @@ section.listOfAliment{
 
 }
 #h2TitleCourse{
-	padding:15px;
-	margin-top:20px;
-	margin-bottom:30px;
+	padding-top:30px;
+	padding-bottom:40px;
+	background:#D9F7E1;
 }
 
 .recipe{
