@@ -156,7 +156,7 @@ appMealControllers.controller('starterCtrl', ['$scope','$routeParams',
 appMealControllers.directive("scroll", function ($window) {
     return function($scope, element, attrs) {
         angular.element($window).bind("scroll", function() {
-             if (this.pageYOffset >= 430) {
+             if (this.pageYOffset >= 250) {
                  $scope.boolNavFixed = true;
              } else {
                  $scope.boolNavFixed = false;

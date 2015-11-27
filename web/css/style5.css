@@ -2,116 +2,72 @@
   * Ajout de quelques règles pour 
   * la routeApp
   */
-section{
-	padding-top:10px;
+section, h1, h2{
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	-o-border-radius:10px;
 	border-radius:10px;
 }
-h1, h2{
+h1, h2, h3{
 	font-style: italic;
-	width: 100%;
 	text-align: center;
-	margin-bottom: 40px;
-	margin-top: 0px;
-	padding:20px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	-o-border-radius:10px;
-	border-radius:10px;
-}
-nav{
-	padding:30px;
-	margin:0px;
-	text-align: center;
-}
-section.home{
-	background:#DBEAF9;
-}
-section.contact{
-	background:#D9F7E1;
-}
-section.contact textarea{
-	width: 100%;
-	padding: 10px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	-o-border-radius:5px;
-	border-radius:5px;
-	color:#777;
-	background:#F4F4F4;
+	padding:15px;
+	margin:0; /* important car sinn il semble avoir un margin de base... */
 }
 
+#h1TitleMeal{
+	color:white;
+	background:orange;
+}
+#navMeal{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+	
+	text-align: center;
+	border-bottom:1px #5cb85c solid;
+	padding:30px;
+}
+.buttonNavActive{
+	color:orange;
+	font-size:10px;
+}
+#sepaNav{
+	color :#5cb85c;
+	font-size:20px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx stylePlanning xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 section.planning{
 	background:#DBEAF9;
 }
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx styleListOfAliment xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 section.listOfAliment{
 	background:#D9F7E1;
 }
 
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx styleCourses xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#sectionCourses{
 
-
-.base-class {
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-  color:blue;
 }
-
-.base-class.my-class {
-  color: red;
-  font-size:3em;
-}.base-class.my-ass {
-  color: yellow;
-  font-size:5em;
-}.base-class.my-init {
-  color: purple;
-  font-size:2em;
+#h2TitleCourse{
+	padding:15px;
+	margin-top:20px;
+	margin-bottom:30px;
 }
 
-#mealTitle{
-color:white;
-background:orange;
-}
-.myActive{
-color:pink;
-  font-size:2em;
-}
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx styleCourses xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-#sectionMeals{
-	
-}
-
-.recipe:before {
-    display: inline-block;
-    width: 33%;
-    min-width: 200px;
-}
 .recipe{
-	border:3px solid chocolate;/*bleu clair*/   /* blueviolet*/
+	border:3px solid #404040;/*chocolate bleu clair*/   /* blueviolet*/
+	/*border:2px solid orange;*/
 	border-radius: 10px ;
-	height: 650px;
-	width: 70%;
-	margin-left: 20%;
-	margin-top: 10px;
-	opacity:1;
-	color: white;
-    text-shadow:
-    -0.5px -0.5px 0 #000,
-    0.5px -0.5px 0 #000,
-    -0.5px 0.5px 0 #000,
-    0.5px 0.5px 0 #000; 
-	font-family:Comic Sans MS;
-	background-repeat:no-repeat, repeat;
-	background-size:30%, 100%;
-	background-position:5% 15%, top left;
-}
-.recipeNoPix{
-	border:3px solid chocolate;/*bleu clair*/   /* blueviolet*/
-	border-radius: 10px ;
-	height: 650px;
-	width: 70%;
-	margin-left: 20%;
-	margin-top: 10px;
+	width: 70vw;
+	margin-left: 22vw;
+	margin-top:10px; /* espacement entre chaque recipe */
+	padding:10px;
 	opacity:1;
 	color: white;
     text-shadow:
@@ -123,31 +79,70 @@ color:pink;
 	background-repeat:repeat;
 	background-size:100%;
 	background-position:top left;
+	/*background-repeat:no-repeat, repeat;
+	background-size:30%, 100%;
+	background-position:5% 15%, top left;
+	*/
 }
-.ingredients{
-	margin-left:40%;
-	font-style:bold;
-	font-size:large;  
+.recipeNoPix{
+	background-repeat:repeat;
+	background-size:100%;
+	background-position:top left;
+}
+.divTopRecipe{
+	margin-top:15px;
+	overflow:hidden; 
 }
 
-.preparation{
-	margin-left:10%;
+.littlePixRecipe{
+	width:350px;
+	height:200px;
+	
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:top left;
+	background-image:url("../images/burger2.jpg");
+	
+	display: inline-block;
+	margin-left:2vw;
+	
+}
+
+.ingredientRecipe{
+	display: inline-block;
+	margin-left:2vw;
+	vertical-align:top;
+	font-style:bold;
+	font-size:large;
+}
+.h4TitlePreparation{
+	margin-left:5vw;
+}
+.preparationRecipe{
+	margin-left:2vw;
 	font-style:bold;
 	font-size:large;
 }
 
-#burgers{
-	background-image:url("../images/burger2.jpg"), url("../images/burger.jpg");
+#recipeBurgers{
+	background-image:url("../images/burger.jpg");
+}
+#littlePixBurgers{
+	background-image:url("../images/burger2.jpg")
 }
 
-#lasagna{
-	background-image:url("../images/lasagne2.jpg"),url("../images/lasagne.jpg");
+#recipeLasagna{
+	background-image:url("../images/lasagne.jpg");
 }
-#lasagna2{
+#littlePixLasagna{
+	background-image:url("../images/lasagne2.jpg");
+}
+
+#recipeLasagna2{
 	background-image:url("../images/blueSlateSlab.jpg");
 
 }
-#lasagna3{
+#recipeLasagna3{
 	background-image:url("../images/blackSlateSlab.jpg");
 }
 
@@ -165,13 +160,16 @@ color:pink;
 
 #navCourses ul li{
 	/*border:3px solid chocolate;*/  /*bleu clair*/   /* blueviolet*/
-	border-radius: 4px ;
+	border-radius: 15px ;
 	margin-top:10px;
 	background-image:url("../images/blackSlateSlab.jpg");
+	
+	border:1px solid orange;
 	text-align: center;
-	padding:0.2vh 1vh 0.2vh 1vh;
+	/*padding : 6px 12px 6px 12px;*/
+	padding:0.4vh 1vh 0.4vh 1vh;
 	width : 15vw;
-	min-width:80px; 
+	min-width:60px; 
 	overflow:hidden; /*permet de cacher le texte qui dépasse*/
 }
 

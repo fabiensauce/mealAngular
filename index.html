@@ -15,17 +15,15 @@
     <body>
 	
 	
-		<h1 id="mealTitle" >Meals</h1>
-	
-		<nav ng-controller="navCtrl" >
-			<a href="#/planning" class="btn btn-success" ng-class="{ myActive: isActive('/planning')}" >Planning</a>
-            <a href="#/listOfAliment" class="btn btn-success" ng-class="{myActive: isActive('/listOfAliment')}" >List of Aliments</a>
-			</br>
-			</br>
-            <a href="#/starter" class="btn btn-success" ng-class="{ myActive: isActive('/starter')}" >Starter</a>
-            <a href="#/course" class="btn btn-success" ng-class="{ myActive: isActive('/course')}" >Course</a>
-            <a href="#/dessert" class="btn btn-success" ng-class="{ myActive: isActive('/dessert')}" >Dessert</a>
-			<a href="#/breakfast"  class="btn btn-success" ng-class="{ myActive: isActive('/breakfast')}" >Breakfast</a>
+		<h1 id="h1TitleMeal" >Meals</h1>
+		<nav id="navMeal" ng-controller="navCtrl" >
+			<a href="#/planning" class="btn btn-success" ng-class="{ buttonNavActive: isActive('/planning')}" >Planning</a>
+            <a href="#/listOfAliment" class="btn btn-success" ng-class="{buttonNavActive: isActive('/listOfAliment')}" >List of Aliments</a>
+			<span id="sepaNav" >&nbsp | &nbsp</span>
+            <a href="#/starter" class="btn btn-success" ng-class="{ buttonNavActive: isActive('/starter')}" >Starter</a>
+            <a href="#/course" class="btn btn-success" ng-class="{ buttonNavActive: isActive('/course')}" >Course</a>
+            <a href="#/dessert" class="btn btn-success" ng-class="{ buttonNavActive: isActive('/dessert')}" >Dessert</a>
+			<a href="#/breakfast"  class="btn btn-success" ng-class="{ buttonNavActive: isActive('/breakfast')}" >Breakfast</a>
         </nav>
 		
         <div ng-view>
