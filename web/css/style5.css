@@ -42,6 +42,22 @@ h1, h2, h3{
 section.planning{
 	background:#DBEAF9;
 }
+#tablePlaning, #tablePlaning th , #tablePlaning td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+#tablePlaning{
+	border-radius: 0 0 0 10px ;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+#tablePlaning tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+#tablePlaning tr:nth-child(even) {
+  background-color: #ffffff;
+}
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx styleListOfAliment xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 section.listOfAliment{

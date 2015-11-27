@@ -29,16 +29,7 @@ appMeal.config(['$routeProvider',
         
         // Système de routage
         $routeProvider
-        .when('/home', {
-            templateUrl: 'partials/home.html',
-            controller: 'homeCtrl'
-			//,activetab: 'home'
-        })
-        .when('/contact/:msg?', {
-            templateUrl: 'partials/contact.html',
-            controller: 'contactCtrl'
-        })
-        .when('/planning', {
+        .when('/planning/:msg?', {
             templateUrl: 'partials/planning.html',
             controller: 'planningCtrl'
         })
@@ -63,7 +54,7 @@ appMeal.config(['$routeProvider',
             controller: 'breakfastCtrl'
         })
         .otherwise({
-            redirectTo: '/home'
+            redirectTo: '/planning'
         });
     }
 ]);
