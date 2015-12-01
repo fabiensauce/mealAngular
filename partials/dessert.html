@@ -1,7 +1,57 @@
-<!-- partials/home.html -->
-<section class="home">
-    <h2>Page d'accueil</h2>
-    <p>
-        {{ message }}
-    </p>
-</section>
+<!-- partials/dessert.html -->
+
+<section id="sectionDessert" scroll class="section">
+	<h2 class="h2TitleRecipe"> Nos propositions de Desserts </h2>
+ 
+<article id="navRecipe"  ng-class="{navRecipeFixed:boolNavFixed}">
+	 <ul ng-repeat="dessert in desserts">
+	  <li><a href="#/dessert/#recipe{{dessert.name}}">{{dessert.title}}</a></li>
+	</ul>
+</article>
+	
+	<article id="recipeCreation" class="recipe" style="background-image:url('web/images/blackSlateSlab.jpg');"> <!--id="{{dessert.idArticle}}" it works ! -->
+		<h3 > Create your recipe </h3>
+		
+		<form ng-submit="submitCreationRecipe()" >
+		
+		<div class="divTopRecipe">
+			<div  class="littlePixRecipe" style="background-image:url('web/images/dessert/creationDessert.jpg')"> <!--id="littlePixBurgers" -->
+			</div>
+			<div class="ingredientRecipe">
+				<h4> Ingrédients </h4>
+				<input class="blackColor" type="text" ng-model="ingredient" name="nom de l'ingredient" />
+			</div>
+		</div>
+		
+		<div class="preparationRecipe">
+			<h4 class="h4TitlePreparation"> Préparation</h4>
+			<p>
+				<input class="blackColor" type="text" ng-model="preparation" name="contenu de preparation" />
+			</p>
+		</div>
+		<input type="submit" id="submit" value="Submit" />
+		</form>
+	</article>
+	
+	
+	<div ng-repeat="dessert in desserts">
+	<article id="recipe{{dessert.name}}" class="recipe" style="background-image:url('web/images/blackSlateSlab.jpg');"> <!--id="{{dessert.idArticle}}" it works ! -->
+		<h3 >{{dessert.title}} ({{dessert.nbPers}} pers.)</h3>
+		<div class="divTopRecipe">
+			<div  class="littlePixRecipe" style="background-image:url('web/images/dessert/{{dessert.name}}.jpg')"> <!--id="littlePixBurgers" -->
+			</div>
+			<div class="ingredientRecipe">
+				<h4> Ingrédients </h4>
+				<ul ng-repeat="ingr in dessert.ingredients">
+					<li > <span>{{ingr.quantity}}</span>{{ingr.unit}}<span></span> <span>{{ingr.name}}<span> </li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="preparationRecipe">
+			<h4 class="h4TitlePreparation"> Préparation</h4>
+			<p> {{dessert.preparation}} </p>
+		</div>
+	</article>
+    </div>
+ </section >

@@ -1,0 +1,18 @@
+[{"name":"fondantChocolat",
+"nbPers":"4",
+"title":"Fondant au Chocolat", 
+	"ingredients": [ {"quantity":"200", "unit":"g", "name":"chocolat noir"},
+					{"quantity":"200", "unit":"g", "name":"sucre"},
+					{"quantity":"75", "unit":"g", "name":"beurre"}],
+	"preparation":"MELANGEZ LE TOUT CA PEUT ETRE QUE BON AHAH"
+},
+{"name":"crumblePomme",
+"title":"Crumble aux Pommes", 
+"nbPers":"2",
+	"ingredients": [ {"quantity":"300", "unit":"g", "name":"pomme"},
+					{"quantity":"200", "unit":"g", "name":"sucre"},
+					{"quantity":"100", "unit":"g", "name":"farine"},
+					{"quantity":"75", "unit":"g", "name":"beurre"}],
+	"preparation":"Melangez sucre et farine puis beurre dans un saladier jusqu'à l'obtention d'une pate, puis disposez dans un plan à four des cubes de pommes en versant la pate par dessus. 25min au four "
+}
+]

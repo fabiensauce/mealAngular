@@ -67,10 +67,8 @@ section.listOfAliment{
   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx styleCourses xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-#sectionCourses{
 
-}
-#h2TitleCourse{
+.h2TitleRecipe{
 	padding-top:30px;
 	padding-bottom:40px;
 	background:#D9F7E1;
@@ -173,17 +171,17 @@ section.listOfAliment{
 */
 
 
-#navCourses{
+#navRecipe{
 	float: left;
 	margin-left:2vw;
 }
 
-#navCourses ul{
+#navRecipe ul{
     list-style-type: none;
 	padding-left:0;
 }
 
-#navCourses ul li{
+#navRecipe ul li{
 	/*border:3px solid chocolate;*/  /*bleu clair*/   /* blueviolet*/
 	border-radius: 15px ;
 	margin-top:10px;
@@ -198,7 +196,7 @@ section.listOfAliment{
 	overflow:hidden; /*permet de cacher le texte qui dépasse*/
 }
 
-#navCourses ul li a{
+#navRecipe ul li a{
 	color: white;
     text-shadow:
     -0.5px -0.5px 0 #000,
@@ -207,7 +205,11 @@ section.listOfAliment{
     0.5px 0.5px 0 #000; 
 	font-family:Comic Sans MS;
 }
-.navCoursesFixed {
+.navRecipeFixed {
 	position: fixed;
 	top:0;
+}
+
+.blackColor{
+	color:black;
 }

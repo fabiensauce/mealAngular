@@ -1,0 +1,17 @@
+** insert data into JSON file :
+dessertModule.js : $http.post
+
+**nav ancor does not work into recipe (course, dessert or starter)
+
+** UIbootstrap angular for datepicker....
+
+** recipe with different picture & background : I want the picture in the top left corner and the same one in the background but with some grey. 
+this can be possible with the CSS3 code : 
+	filter: grayscale(1); 
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1); 
+but if we do that to the entire recipe then it is apply as well to sub container, hence the smaller picture but I don't want it to be grey as well so PB !
+A solution would be to had another container <div> and put the background picture in it but then we had to "calque" it on the recipe container... tricky
+
