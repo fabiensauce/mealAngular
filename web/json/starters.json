@@ -1,0 +1,16 @@
+[{"name":"feuilleteSaucisses",
+"nbPers":"4",
+"title":"Feuilletés aux Saucisses", 
+	"ingredients": [ {"quantity":"200", "unit":"g", "name":"saucisses de strasbourg"},
+					{"quantity":"1", "unit":"", "name":"pate feuilletés"}],
+	"preparation":"Coupez les saucisses en morceau, enrouler les morceau dans des morceaux de pate decoupes prealablement puis au FOUR ahah !"
+},
+{"name":"painTomateJambonCru",
+"title":"Pain frotté à la tomate et au jambon cru", 
+"nbPers":"4",
+	"ingredients": [ {"quantity":"2", "unit":"", "name":"baguette"},
+					{"quantity":"200", "unit":"g", "name":"jambon cru"},
+					{"quantity":"100", "unit":"g", "name":"tomates"}],
+	"preparation":"Coupez les baguettes en tartine, tartinez de tomates puis placer le jambon cru dessus"
+}
+]

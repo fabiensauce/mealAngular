@@ -7,12 +7,19 @@
 ******************************************************************
  */
  
- 
+ //var planningControllers = angular.module('planningControllers', ['ui.bootstrap']);
  var planningControllers = angular.module('planningControllers', []);
- planningControllers.controller('planningCtrl', ['$scope','$routeParams',
-    function($scope, $routeParams){
-        $scope.message = "1223 BIENVENUE ds les planning !!! PPPPTITINTITNNITN DADEL =)";
+ planningControllers.controller('planningCtrl', ['$scope','$routeParams', '$http',
+    function($scope, $routeParams, $http){
+        $scope.message = "BIENVENUE ds les planning !!";
 		$scope.msg =  $routeParams.msg || "ecrire là haut ds l'url apres le slash";
+		$http.get('web/json/langues.json').success(function(data) {
+		   $scope.languages = data;
+		});
+		/*$http.post('path/to/server/file/to/save/json', $scope.languages).then(function(data) {
+		  $scope.msg = 'Data saved';
+		});*/
+		//$scope.msg = 'Data sent: '+ JSON.stringify($scope.languages);
     }
 ]);
 

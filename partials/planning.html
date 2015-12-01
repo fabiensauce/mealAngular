@@ -2,9 +2,16 @@
 <section class="planning">
     <h2>Planing</h2>
     <p>
-        {{ message }}
-        {{ msg }}
+        {{ message }} ee
+		</br>
+        {{ msg }}ee
     </p>
+	
+	<div ng-repeat="lang in languages">
+      <label>{{lang.name}}</label>
+      <input type="text" ng-model="lang.value" >
+    </div>
+	
 	<textarea ng-model="msg"></textarea>
 	
 	<table id="tablePlaning">

@@ -99,7 +99,16 @@ section.listOfAliment{
 	background-size:30%, 100%;
 	background-position:5% 15%, top left;
 	*/
+	 /* **for making it grey **
+	 filter: grayscale(1); 
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	*/
+			
 }
+
 .recipeNoPix{
 	background-repeat:repeat;
 	background-size:100%;
@@ -123,7 +132,6 @@ section.listOfAliment{
 	margin-left:2vw;
 	
 }
-
 .ingredientRecipe{
 	display: inline-block;
 	margin-left:2vw;
@@ -140,6 +148,7 @@ section.listOfAliment{
 	font-size:large;
 }
 
+/*
 #recipeBurgers{
 	background-image:url("../images/burger.jpg");
 }
@@ -161,7 +170,7 @@ section.listOfAliment{
 #recipeLasagna3{
 	background-image:url("../images/blackSlateSlab.jpg");
 }
-
+*/
 
 
 #navCourses{
