@@ -18,6 +18,11 @@
 	<textarea ng-model="msg"></textarea>
 	-->
 	
+	
+	<a ng-href="web/images/{{username}}.jpg">Hello {{username}}!</a>
+	</br>
+	<a ng-href="web/images/{{usernameJPG}}">Hello {{usernameJPG}}!</a>
+	
 <article class="divTopPlanning">
 
 
@@ -116,11 +121,13 @@
 	
 </article>	
 	
-	
-	
-	
-	
-	
+	<div>
+    <div ng-repeat="c in columns" class="column"
+      drag="c" dragStyle="columnDrag"
+      drop="c" dropStyle="columnDrop">
+      {{c.title}}
+    </div>
+</div>
 	
 	
 	

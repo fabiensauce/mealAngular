@@ -14,6 +14,124 @@
 
 
  <section id="datepicker">
+ 
+ <!-- fonctionne
+ 
+ 
+ 
+ <article id="navbreakfast"  ng-class="{navCoursesFixed:boolNavFixed}">
+	<ul ng-repeat="myNav in myNavs">
+	  <li><a href="#/breakfast/#recipe{{myNav}}">Burgers + .{{myNav}}.</a></li>
+	</ul>
+</article>
+
+
+	<div ng-repeat="myNav in myNavs">
+		<article id="recipe{{myNav}}" class="recipe">
+			<h3 > Burgers + .{{myNav}}.</h3>
+			<div class="divTopRecipe">
+				<div id="littlePixBurgers" class="littlePixRecipe" >
+				</div>
+				<div class="ingredientRecipe">
+					<h4> Ingrédients </h4>
+					<ul>
+						<li > <span>10</span><span></span> <span id="painsBurger">pains burgers<span> </li>
+						<li>  <span>5</span><span></span> <span id="tomates">tomates</span> </li>
+						<li>  <span>100</span><span>g</span> <span id="fromageRape">fromages rapés</span></li>
+						<li > <span>10</span><span></span> <span id="steaks">steaks hachés</span> </li>
+						<li > <span>1</span><span></span> <span id="sauceBurger">sauce burger </span> </li>
+						<li > <span>1</span><span></span> <span id="salade">salade</span> </li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="preparationRecipe">
+				<h4 class="h4TitlePreparation"> Préparation</h4>
+				<p> Faire cuire les steaks hachés sans matière grasse dans une poele avec un couvercle. </p>
+				<p> Pendant ce temps, coupez les tomates en tranches fines et lavez la salade si besoin. </p>
+				<p> Lorsque les steaks sont prêts, préparez les burgers:
+					<ul>
+					<li> Déposez les tranches de pains burgers dans une assiète. 
+					<li> Mettre du fromage sur les deux côtés du pain. </li> 
+					<li> Les faire chauffer au micro onde 30 secondes. </li>
+					<li> Recouvrez les de sauce burger. </li>
+					<li> Mettez le steak, 3 tranches de tomates et une feuille de salade. </li>
+					</ul>
+					</p>
+				
+			</div>
+		</article>
+	</div>
+	-->
+	
+ 
+ 
+ 
+  <article id="navbreakfast"  ng-class="{navCoursesFixed:boolNavFixed}">
+	<ul ng-repeat="courseLocal in coursesLocals">
+	  <li><a href="#/breakfast/#recipe{{courseLocal.name}}">Burgers + .i.{{courseLocal.name}}.i.</a></li>
+	</ul>
+</article>
+
+
+	<div ng-repeat="courseLocal in coursesLocals">
+		<article id="recipe{{courseLocal.name}}" class="recipe">
+			<h3 > Burgers + .i.{{courseLocal.name}}.i.</h3>
+			<div class="divTopRecipe">
+				<div id="littlePixBurgers" class="littlePixRecipe" >
+				</div>
+				<div class="ingredientRecipe">
+					<h4> Ingrédients </h4>
+					<ul>
+						<li > <span>10</span><span></span> <span id="painsBurger">pains burgers<span> </li>
+						<li>  <span>5</span><span></span> <span id="tomates">tomates</span> </li>
+						<li>  <span>100</span><span>g</span> <span id="fromageRape">fromages rapés</span></li>
+						<li > <span>10</span><span></span> <span id="steaks">steaks hachés</span> </li>
+						<li > <span>1</span><span></span> <span id="sauceBurger">sauce burger </span> </li>
+						<li > <span>1</span><span></span> <span id="salade">salade</span> </li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="preparationRecipe">
+				<h4 class="h4TitlePreparation"> Préparation</h4>
+				<p> Faire cuire les steaks hachés sans matière grasse dans une poele avec un couvercle. </p>
+				<p> Pendant ce temps, coupez les tomates en tranches fines et lavez la salade si besoin. </p>
+				<p> Lorsque les steaks sont prêts, préparez les burgers:
+					<ul>
+					<li> Déposez les tranches de pains burgers dans une assiète. 
+					<li> Mettre du fromage sur les deux côtés du pain. </li> 
+					<li> Les faire chauffer au micro onde 30 secondes. </li>
+					<li> Recouvrez les de sauce burger. </li>
+					<li> Mettez le steak, 3 tranches de tomates et une feuille de salade. </li>
+					</ul>
+					</p>
+				
+			</div>
+		</article>
+	</div>
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
                         <div class="page-header">
                           <h1>Datepicker<small>
                               (<a target="_blank" href="https://github.com/angular-ui/bootstrap/tree/master/src/datepicker">ui.bootstrap.datepicker</a>)
