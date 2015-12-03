@@ -213,3 +213,75 @@ section.listOfAliment{
 .blackColor{
 	color:black;
 }
+
+  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx planning xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+.divTopPlanning{
+	margin-top:15px;
+	margin-bottom:30px;
+	border-radius: 15px ;
+	border:2px solid orange;
+	/*min-width:1000px;*/
+	overflow:auto; /* marche pas...*/
+}
+
+.chooseRecipe{
+	/*width:350px;
+	height:200px;
+	
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:top left;
+	background-image:url("../images/burger2.jpg");
+	*/
+	border-bottom:2px solid #428bca;
+	border-radius:10px;
+	/*margin-left:2vw;*/
+	
+}
+.buttonChooseRecipe{
+	margin: 15px 0 15px 3vw; /*top right bottom left*/
+}
+.listRecipe{
+	padding-top: 25px;
+	padding-bottom: 15px;
+	
+	/*margin-left:2vw;
+	vertical-align:top;
+	font-style:bold;
+	font-size:large;
+	*/
+}
+
+.elementListRecipe{
+
+	display: inline-block;
+	margin-left: 3vw; /*top right bottom left*/
+	margin-bottom:10px;
+	font-style:bold;
+	font-size:large;
+	
+	padding : 6px 12px;
+	border:2px solid #428bca; /*color blue like btn-primary*/
+	border-radius:5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

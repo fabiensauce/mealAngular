@@ -1,0 +1,9 @@
+*sur un ex de function :
+function(scope, element, attrs) {
+    element.bind('dragenter', function(evt) {
+        ...
+    });
+
+=> d'où sortent les variables (evt, element, attrs...) ??? est-ce qu'on peut voir où elles sont repertoriées ?
+
+*
