@@ -17,7 +17,7 @@ breakfastControllers.controller('breakfastCtrl', ['$scope','$routeParams',
 
 */
 
-angular.module('breakfastControllers', []).controller('breakfastCtrl', ['$scope',
+angular.module('breakfastControllers', ['ui.bootstrap']).controller('breakfastCtrl', ['$scope',
 	function ($scope) {
 		
 		
