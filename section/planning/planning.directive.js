@@ -1,7 +1,7 @@
 
 
 
-planningControllers.directive("drag", ["$rootScope", function($rootScope) {
+planningModule.directive("drag", ["$rootScope", function($rootScope) {
   
   function dragStart(evt, element, dragStyle) {
     element.addClass(dragStyle);
@@ -29,7 +29,7 @@ planningControllers.directive("drag", ["$rootScope", function($rootScope) {
   }
 }]);
 
-planningControllers.directive("drop", ['$rootScope', function($rootScope) {
+planningModule.directive("drop", ['$rootScope', function($rootScope) {
   
   function dragEnter(evt, element, dropStyle) {
     evt.preventDefault();

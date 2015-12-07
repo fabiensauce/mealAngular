@@ -7,8 +7,8 @@
 ******************************************************************
  */
  /*
- var breakfastControllers = angular.module('breakfastControllers', []);
-breakfastControllers.controller('breakfastCtrl', ['$scope','$routeParams',
+ var breakfastModule = angular.module('breakfastModule', []);
+breakfastModule.controller('breakfastCtrl', ['$scope','$routeParams',
     function($scope, $routeParams){
         $scope.message = "BIENVENUE ds les breakfast !!! woot woot =)";
 		
@@ -32,7 +32,8 @@ app.controller('TestCtrl', function($scope, $location, $anchorScroll) {
 
 */
 
-angular.module('breakfastControllers', ['ui.bootstrap']).controller('breakfastCtrl', ['$scope','$http',
+ var breakfastModule = angular.module('breakfastModule', ['ui.bootstrap']);
+breakfastModule.controller('breakfastCtrl', ['$scope','$http',
 	function ($scope, $http) {
 		
 		

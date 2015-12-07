@@ -9,8 +9,8 @@
  */
  
 
-var navControllers = angular.module('navControllers', []);
-navControllers.controller('navCtrl', ['$scope', '$location',
+var navModule = angular.module('navModule', []);
+navModule.controller('navCtrl', ['$scope', '$location',
     function($scope,$location){
         $scope.firstName = "John";
         $scope.lastName = "Doe";

@@ -6,9 +6,8 @@
 ******************************************************************
 ******************************************************************
  */
- 
- var listOfAlimentControllers = angular.module('listOfAlimentControllers', []);
-listOfAlimentControllers.controller('listOfAlimentCtrl', ['$scope','$routeParams',
+ var listOfAlimentModule = angular.module('listOfAlimentModule', []);
+listOfAlimentModule.controller('listOfAlimentCtrl', ['$scope','$routeParams',
     function($scope, $routeParams){
         $scope.message = "BIENVENUE ds les listOfAliment !!! =)";
 		

@@ -9,8 +9,8 @@
  */
  
 
-var testDirectiveControllers = angular.module('testDirectiveControllers', []);
-testDirectiveControllers.controller('testDirectiveCtrl', ['$scope', '$location',
+var testDirectiveModule = angular.module('testDirectiveModule', []);
+testDirectiveModule.controller('testDirectiveCtrl', ['$scope', '$location',
     function($scope,$location){
         $scope.msg = "BINEVUNE DS TEST DIRECTIVE";
         $scope.lastName = "Doe";
@@ -26,7 +26,7 @@ testDirectiveControllers.controller('testDirectiveCtrl', ['$scope', '$location',
 ]);
 
 
-testDirectiveControllers.directive("myTarget", function(){
+testDirectiveModule.directive("myTarget", function(){
 	return{
         restrict: 'EA',
         transclude: true,
@@ -44,7 +44,7 @@ testDirectiveControllers.directive("myTarget", function(){
 })
 
 
-testDirectiveControllers.directive("appear1", ["$rootScope", function($rootScope) {
+testDirectiveModule.directive("appear1", ["$rootScope", function($rootScope) {
 	return {
 		restrict: 'E',
         require: '^?myTarget',
