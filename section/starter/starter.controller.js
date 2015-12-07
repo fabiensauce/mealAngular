@@ -25,17 +25,3 @@ starterControllers.controller('starterCtrl', ['$scope','$routeParams', '$http',
 		//$scope.msg = 'Data sent: '+ JSON.stringify($scope.languages);
     }
 ]);
-/** ci dessous permet d'effectuer une action (ici fixer la nav) après une certaine distance de scroll **/
-/** identique dans STARTER COURSE & DESSERT .... **/
-starterControllers.directive("scroll", function ($window) {
-    return function($scope, element, attrs) {
-        angular.element($window).bind("scroll", function() {
-             if (this.pageYOffset >= 250) {
-                 $scope.boolNavFixed = true;
-             } else {
-                 $scope.boolNavFixed = false;
-             }
-            $scope.$apply();
-        });
-    };
-});

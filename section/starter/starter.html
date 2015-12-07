@@ -10,7 +10,8 @@
 </article>
 	
 	<div ng-repeat="starter in starters">
-	<article id="recipe{{starter.name}}" class="recipe" style="background-image:url('web/images/starter/{{starter.name}}2.jpg'),url('web/images/blueSlateSlab.jpg');"> <!--id="{{starter.idArticle}}" it works ! -->
+	<article id="recipe{{starter.name}}" class="recipe" style="background-image:url('web/images/blueSlateSlab.jpg');"> <!--id="{{starter.idArticle}}" it works ! 
+																																										style="background-image:url('web/images/starter/{{starter.name}}2.jpg'),url('web/images/blueSlateSlab.jpg');"-->
 		<h3 >{{starter.title}} ({{starter.nbPers}} pers.)</h3>
 		<div class="divTopRecipe">
 			<div  class="littlePixRecipe" style="background-image:url('web/images/starter/{{starter.name}}.jpg')"> <!--id="littlePixBurgers" -->
