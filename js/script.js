@@ -14,7 +14,8 @@ var appMeal = angular.module('appMeal', [
 	'starterControllers',
 	'courseControllers',
 	'dessertControllers',
-	'breakfastControllers'
+	'breakfastControllers',
+	'testDirectiveControllers'
 	
 ]);
 
@@ -52,6 +53,10 @@ appMeal.config(['$routeProvider',
         .when('/breakfast', {
             templateUrl: 'partials/breakfast.html',
             controller: 'breakfastCtrl'
+        })
+        .when('/testDirective', {
+            templateUrl: 'partials/testDirective.html',
+            controller: 'testDirectiveCtrl'
         })
         .otherwise({
             redirectTo: '/planning'

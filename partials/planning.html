@@ -18,6 +18,11 @@
 	<textarea ng-model="msg"></textarea>
 	-->
 	
+	
+	<a ng-href="web/images/{{username}}.jpg">Hello {{username}}!</a>
+	</br>
+	<a ng-href="web/images/{{usernameJPG}}">Hello {{usernameJPG}}!</a>
+	
 <article class="divTopPlanning">
 
 
@@ -62,6 +67,13 @@
 	</div>
 </article>
 
+<input type="button" value="click on that fu.... button !" >
+<div> Appear 1 : </div>
+
+<appear1></appear1>
+
+<div> end appear 1 : </div>
+
 
 <article >
 	<table id="tablePlaning">
@@ -69,7 +81,7 @@
 		<th></th>
 		<th>Lundi</th>
 		<th>Mardi</th>
-		<th>Mercredi</th>
+		<th >Mercredi</th>
 		<th>Jeudi</th>
 		<th>Vendredi</th>
 		<th>Samedi</th>
@@ -116,11 +128,13 @@
 	
 </article>	
 	
-	
-	
-	
-	
-	
+	<div>
+		<div ng-repeat="c in columns" class="column"
+		  drag="c" dragStyle="columnDrag"
+		  drop="c" dropStyle="columnDrop">
+		  {{c.title}}
+		</div>
+	</div>
 	
 	
 	

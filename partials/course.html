@@ -5,14 +5,16 @@
   
 <article id="navRecipe"  ng-class="{navRecipeFixed:boolNavFixed}">
 	 <ul ng-repeat="course in courses">
-	  <li><a ng-href="#/course/#recipe{{course.name}}">{{course.title}}</a></li>
+	  <li><a ng-href="#/course/#recipe{{::course.name}}">{{course.title}} + .{{course.name}}.</a></li>
 	</ul>
 </article>
+
+	<a href="#/course/#recipeescalopeViennoise">Hello {{course.title}}</a>
 
 
 <div ng-repeat="course in courses">
 	<article id="recipe{{::course.name}}" class="recipe" style="background-image:url('web/images/blackSlateSlab.jpg');"> <!--id="{{course.idArticle}}" it works ! -->
-		<h3 >{{course.title}} ({{course.nbPers}} pers.)</h3>
+		<h3 >.{{course.name}}. + {{course.title}} ({{course.nbPers}} pers.)</h3>
 		<div class="divTopRecipe">
 			<div  class="littlePixRecipe" style="background-image:url('web/images/course/{{course.name}}.jpg');
 			
@@ -37,4 +39,9 @@
 <article id="recipeescalopeViennoise" class="recipe"> 
 	BONJOUR recip BOOM
 	</article>
+	
+	
+	
+	
+	
 </section >
