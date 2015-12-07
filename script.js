@@ -58,6 +58,10 @@ appMeal.config(['$routeProvider',
             templateUrl: 'section/test/testDirective.html',
             controller: 'testDirectiveCtrl'
         })
+        .when('/testDD', {
+                    templateUrl: 'section/test/testDragAndDrop.html',
+                    controller: 'dragAndDropCtrl'
+                })
         .otherwise({
             redirectTo: '/planning'
         });
