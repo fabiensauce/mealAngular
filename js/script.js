@@ -31,31 +31,31 @@ appMeal.config(['$routeProvider',
         // Système de routage
         $routeProvider
         .when('/planning/:msg?', {
-            templateUrl: 'partials/planning.html',
+            templateUrl: 'section/planning/planning.html',
             controller: 'planningCtrl'
         })
         .when('/listOfAliment', {
-            templateUrl: 'partials/listOfAliment.html',
+            templateUrl: 'section/listOfAliment/listOfAliment.html',
             controller: 'listOfAlimentCtrl'
         })
         .when('/starter', {
-            templateUrl: 'partials/starter.html',
+            templateUrl: 'section/starter/starter.html',
             controller: 'starterCtrl'
         })
         .when('/course', {
-            templateUrl: 'partials/course.html',
+            templateUrl: 'section/course/course.html',
             controller: 'courseCtrl'
         })
         .when('/dessert', {
-            templateUrl: 'partials/dessert.html',
+            templateUrl: 'section/dessert/dessert.html',
             controller: 'dessertCtrl'
         })
         .when('/breakfast', {
-            templateUrl: 'partials/breakfast.html',
+            templateUrl: 'section/breakfast/breakfast.html',
             controller: 'breakfastCtrl'
         })
         .when('/testDirective', {
-            templateUrl: 'partials/testDirective.html',
+            templateUrl: 'section/test/testDirective.html',
             controller: 'testDirectiveCtrl'
         })
         .otherwise({
