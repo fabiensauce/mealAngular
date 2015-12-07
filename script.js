@@ -15,7 +15,8 @@ var mealApp = angular.module('mealApp', [
 	'courseModule',
 	'dessertModule',
 	'breakfastModule',
-	'testDirectiveModule'
+	'testDirectiveModule',
+	'dragAndDropModule'
 	
 ]);
 

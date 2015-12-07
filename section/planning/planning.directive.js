@@ -1,6 +1,7 @@
 
 
 
+ var planningModule = angular.module('planningControllers', []);
 planningModule.directive("drag", ["$rootScope", function($rootScope) {
   
   function dragStart(evt, element, dragStyle) {

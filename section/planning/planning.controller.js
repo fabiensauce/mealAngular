@@ -8,7 +8,7 @@
  */
  
  //var planningModule = angular.module('planningModule', ['ui.bootstrap']);
- var planningModule = angular.module('planningControllers', []);
+ var planningModule = angular.module('planningModule', []);
  planningModule.controller('planningCtrl', ['$scope','$routeParams', '$http', "$rootScope",
     function($scope, $routeParams, $http, $rootScope){
         $scope.message = "BIENVENUE ds les planning !!";
