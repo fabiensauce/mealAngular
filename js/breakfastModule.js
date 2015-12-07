@@ -32,12 +32,12 @@ app.controller('TestCtrl', function($scope, $location, $anchorScroll) {
 
 */
 
-angular.module('breakfastControllers', []).controller('breakfastCtrl', ['$scope', '$http',
+angular.module('breakfastControllers', ['ui.bootstrap']).controller('breakfastCtrl', ['$scope','$http',
 	function ($scope, $http) {
+		
 		
 		$scope.naav = "xxxxx";
 		$scope.myNavs = [ "hi", "bjr", "gotekctak"];
-		
 		
 		$http.get('web/json/courses.json').success(function(data) {
 		   $scope.coursesLocals = angular.fromJson(data);
