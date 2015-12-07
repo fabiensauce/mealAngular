@@ -7,7 +7,7 @@
 ******************************************************************
  */
  
- var starterControllers = angular.module('starterControllers', []);
+ var starterControllers = angular.module('starterControllers', ['ui.bootstrap']);
 starterControllers.controller('starterCtrl', ['$scope','$routeParams',
     function($scope, $routeParams){
         $scope.message = "BIENVENUE ds les starter e tpas course !!! =)";
