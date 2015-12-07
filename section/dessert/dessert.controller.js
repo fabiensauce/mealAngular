@@ -6,9 +6,8 @@
 ******************************************************************
 ******************************************************************
  */
-
- var dessertControllers = angular.module('dessertControllers', []);
-dessertControllers.controller('dessertCtrl', ['$scope','$routeParams','$http',
+ var dessertModule = angular.module('dessertModule', []);
+dessertModule.controller('dessertCtrl', ['$scope','$routeParams','$http',
     function($scope, $routeParams, $http){
         $scope.message = "BIENVENUE ds les DESSERT !!! =)";
 		$http.get('web/json/desserts.json').success(function(data) {

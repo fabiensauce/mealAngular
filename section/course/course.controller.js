@@ -8,9 +8,8 @@
 ******************************************************************
  */
  
- 
- var courseControllers = angular.module('courseControllers', []);
-courseControllers.controller('courseCtrl', ['$scope','$routeParams','$http',
+ var courseModule = angular.module('courseModule', []);
+courseModule.controller('courseCtrl', ['$scope','$routeParams','$http',
     function($scope, $routeParams, $http){
         $scope.message = "BIENVENUE ds les COURSE !!! =)";
 		$http.get('web/json/courses.json').success(function(data) {

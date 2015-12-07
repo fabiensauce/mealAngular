@@ -3,19 +3,19 @@
 
 
 /**
- * Déclaration de l'application appMeal
+ * Déclaration de l'application mealApp
  */
-var appMeal = angular.module('appMeal', [
+var mealApp = angular.module('mealApp', [
     // Dépendances du "module"
     'ngRoute',
-	'navControllers',
-	'planningControllers',
-	'listOfAlimentControllers',
-	'starterControllers',
-	'courseControllers',
-	'dessertControllers',
-	'breakfastControllers',
-	'testDirectiveControllers'
+	'navModule',
+	'planningModule',
+	'listOfAlimentModule',
+	'starterModule',
+	'courseModule',
+	'dessertModule',
+	'breakfastModule',
+	'testDirectiveModule'
 	
 ]);
 
@@ -23,9 +23,9 @@ var appMeal = angular.module('appMeal', [
 
 
 /**
- * Configuration du module principal : appMeal
+ * Configuration du module principal : mealApp
  */
-appMeal.config(['$routeProvider',
+mealApp.config(['$routeProvider',
     function($routeProvider) { 
         
         // Système de routage

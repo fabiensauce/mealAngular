@@ -6,15 +6,14 @@
 ******************************************************************
 ******************************************************************
  */
- 
- var starterControllers = angular.module('starterControllers', []);
-starterControllers.controller('starterCtrl', ['$scope','$routeParams',
+ var starterModule = angular.module('starterModule', []);
+starterModule.controller('starterCtrl', ['$scope','$routeParams',
     function($scope, $routeParams){
         $scope.message = "BIENVENUE ds les starter e tpas course !!! =)";
 		
     }
 ]);
-starterControllers.controller('starterCtrl', ['$scope','$routeParams', '$http',
+starterModule.controller('starterCtrl', ['$scope','$routeParams', '$http',
     function($scope, $routeParams, $http){
 		$http.get('web/json/starters.json').success(function(data) {
 		   $scope.starters = data;

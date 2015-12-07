@@ -7,9 +7,9 @@
 ******************************************************************
  */
  
- //var planningControllers = angular.module('planningControllers', ['ui.bootstrap']);
- var planningControllers = angular.module('planningControllers', []);
- planningControllers.controller('planningCtrl', ['$scope','$routeParams', '$http', "$rootScope",
+ //var planningModule = angular.module('planningModule', ['ui.bootstrap']);
+ var planningModule = angular.module('planningControllers', []);
+ planningModule.controller('planningCtrl', ['$scope','$routeParams', '$http', "$rootScope",
     function($scope, $routeParams, $http, $rootScope){
         $scope.message = "BIENVENUE ds les planning !!";
 		$scope.msg =  $routeParams.msg || "ecrire là haut ds l'url apres le slash";
@@ -49,8 +49,8 @@
 
 	  
 /*
- var planningControllers =  angular.module('planningControllers',['ngMaterial', 'ngMessages']);
-	planningControllers.controller('planningCtrl', ['$scope',
+ var planningModule =  angular.module('planningModule',['ngMaterial', 'ngMessages']);
+	planningModule.controller('planningCtrl', ['$scope',
 	function($scope) {
 		
         $scope.message = "CA C NEEW fuckiiin A !! on sait que c amarche ... ";
